@@ -29,7 +29,7 @@ export  const Navbar  = () => {
 					<ul className="hidden items-center justify-end gap-3 whitespace-nowrap sm:flex">
 					
 						<li className="px-2 py-1 ">
-							<a href="#about" 		className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors" >About</a>
+							<a href="#sobreMi" 		className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors" >Sobre mí</a>
 						</li>
 
 						<li className="px-2 py-1 ">

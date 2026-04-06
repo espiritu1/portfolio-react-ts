@@ -14,13 +14,17 @@ export const Tooltip = ({ children,  position = "top" }: TooltipProps) => {
       className={` 
         absolute
         left-8
-        ${positionClass}  text-xs   px-2  py-1
+        ${positionClass}  
+        text-xs   
+        px-2  
+        py-1
         rounded-md
         whitespace-nowrap
         transition-opacity
-		hidden group-hover:block
-		bg-kanagawa-info
-		border border-kanagawa-highlight
+        hidden group-hover:block
+        bg-kanagawa-info
+        border border-bs-kanagawa-text-secondary
+        text-kanagawa-text-primary
        
       `}
     >

@@ -11,7 +11,7 @@ export const Experiencia = () => {
       </h2>
 
       <div className="flex flex-col gap-8 max-w-2xl mx-auto">
-        
+       
         <ExperienciaItem
           puesto="Full Stack "
           empresa="Dinamo"
@@ -19,18 +19,18 @@ export const Experiencia = () => {
 			tecnologias=" HTML, CSS, JavaScript, Jquery, PHP, Oracle Database, Bootstrap"
           descripcion={
 			<>
-				<p className="text-left my-4">
+				<p className="text-left my-4 ml-8">
 					Desarrollo una plataforma web interna para la gestión y visualización 
 					de videos instructivos, facilitando la capacitación y estandarización
 					de procesos del personal.
 				</p>
 
-				<p className="text-left my-4">
+				<p className="text-left my-4 ml-8">
 					Colaboración en el desarrollo de un sistema web para el registro e
 					ingreso de nuevo personal a las empresas.
 				</p>
 
-    			<p className="text-left my-4">
+    			<p className="text-left my-4 ml-8">
 				Implementación mejoras en el sistema de autenticación (login),
 				centralizando el acceso del personal a las plataformas internas.
 				Participación en la creación de un módulo de asignación y gestión de
@@ -39,14 +39,12 @@ export const Experiencia = () => {
 				información interna.
     			</p>
 			</>
-			}
-						
+			}			
         />
-		
-
-
 
       </div>
+
+	
 
     </section>
   );

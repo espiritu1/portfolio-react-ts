@@ -7,9 +7,10 @@ interface ContactoItemProps {
   copyText?: string;
   href?: string;
   tooltip?: string;
+  className?: string; 
 }
 
-export const ContactoItem = ({ icon, text, href, tooltip}: ContactoItemProps) => {
+export const ContactoItem = ({ icon, text, href, tooltip, className=""}: ContactoItemProps) => {
 
   const [copiado, setCopiado] = useState(false);
 
@@ -30,7 +31,7 @@ export const ContactoItem = ({ icon, text, href, tooltip}: ContactoItemProps) =>
     <div className="relative w-fit group">
 		<Component
 			{...(href ? { href, target: "_blank", rel: "noopener noreferrer"}: { onClick: copiar})}
-        	className=" flex items-center gap-3 text-kanagawa-text-primary hover:text-kanagawa-highlight dark:hover:text-kanagawa-highlight  transition-colors text-left">
+        	  className={`flex items-center gap-3  rounded-2xl   transition-colors text-left ${className}`}>
 				{icon}
 				<span >{text}</span>
 				

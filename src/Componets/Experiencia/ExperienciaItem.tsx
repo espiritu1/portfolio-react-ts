@@ -2,8 +2,8 @@ interface ExperienciaItemProps {
   puesto: string;
   empresa: string;
   fecha: string;
-  tecnologias: string;
-   descripcion: React.ReactNode;
+  tecnologias?: string;
+   descripcion?: React.ReactNode;
 }
 
 export const ExperienciaItem = ({ puesto, empresa, fecha, tecnologias, descripcion }: ExperienciaItemProps) => {
@@ -25,7 +25,7 @@ export const ExperienciaItem = ({ puesto, empresa, fecha, tecnologias, descripci
         {descripcion}
       </p>
 	  
-      <p className="mt-4 text-kanagawa-fg italic text-sm">
+      <p className="mt-4 ml-7 text-kanagawa-fg italic text-sm">
         { tecnologias}
       </p>
     </div>

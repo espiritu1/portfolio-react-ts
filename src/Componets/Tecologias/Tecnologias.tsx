@@ -9,7 +9,7 @@ export const Tecnologias = () => {
 					Tecnologías
 				</h2>
 
-				<ul className="flex flex-row gap-4 justify-center items-center flex-wrap">
+				<ul className="flex flex-row gap-10 justify-center items-center flex-wrap">
 
 					<li>
 						<figure className="flex flex-col">

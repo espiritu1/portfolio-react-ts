@@ -5,7 +5,7 @@ import { Disponible } from "../Disponible/Disponible"
 export const About = () => {
 	return (
 		<>
-		<section id="about" className="mt-10 pb-5 w-[85%] mx-auto">
+		<section id="sobreMi" className="mt-10 pb-5 w-[85%] mx-auto">
 			<div className="max-w-6xl mx-auto px-6">
 
 				<header className=" flex flex-row justify-center items-center gap-6">
