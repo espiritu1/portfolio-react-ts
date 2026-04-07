@@ -46,7 +46,7 @@ export const CardContacto = () => {
 							href={`https://wa.me/52${telefono}`}
 							target="_blank"
 							rel="noopener noreferrer"
-							className=" text-md border border-kanagawa-border px-3 py-1 rounded-md  bg-kanagawa-info hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300 inline-block
+							className=" text-md border border-kanagawa-border  p-1 rounded-md  bg-kanagawa-info hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300 inline-block
 							"> Abrir en navegador
 						</a>
 
