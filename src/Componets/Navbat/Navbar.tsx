@@ -1,7 +1,36 @@
+import { useState, useRef, useEffect } from "react"
 import { ButtonDarkMode } from "../Buttons/ButtonDarkMode"
 import solaire from "../../assets/img/solaire.png"
+import ButtonBurger from "./ButtonBurger"
+import { NavLinks } from "./NavbarLink"
+import { Disponible } from "../Disponible/Disponible"
 
-export  const Navbar  = () => {
+export const Navbar = () => {
+
+	const [isOpen, setIsOpen] = useState(false)
+	const sidebarRef = useRef<HTMLDivElement>(null)
+
+	// cerrar al hacer click fuera
+	useEffect(() => {
+		const handleClickOutside = (event: MouseEvent) => {
+			if (
+				sidebarRef.current &&
+				!sidebarRef.current.contains(event.target as Node)
+			) {
+				setIsOpen(false)
+			}
+		}
+
+		if (isOpen) {
+			document.addEventListener("mousedown", handleClickOutside)
+		}
+
+		return () => {
+			document.removeEventListener("mousedown", handleClickOutside)
+		}
+	}, [isOpen])
+
+	
 
 	return(
 		<>
@@ -9,16 +38,10 @@ export  const Navbar  = () => {
 
 				<nav className="border border-t-0 border-b-0 border-kanagawa-bg-lighter dark:border-kanagawa-text-primary p-3 flex justify-between rounded-full mx-auto backdrop-blur-sm transition-colors ">
 
-					<div className="flex sm:hidden">
-						<label>
-							<div className="w-9 h-10 cursor-pointer flex flex-col items-center justify-center">
-								<input className="hidden peer" type="checkbox" />
-								<div className="w-[50%] h-0.5  bg-kanagawa-bg-lighter dark:bg-kanagawa-text-primary rounded-md transition-all duration-300 origin-left translate-y-[0.45rem] peer-checked:-rotate-45"></div>
-								<div className="w-[50%] h-0.5  bg-kanagawa-bg-lighter dark:bg-kanagawa-text-primary rounded-md transition-all duration-300 origin-center peer-checked:hidden"></div>
-								<div className="w-[50%] h-0.5  bg-kanagawa-bg-lighter dark:bg-kanagawa-text-primary rounded-md transition-all duration-300 origin-left -translate-y-[0.45rem] peer-checked:rotate-45"></div>
-							</div>
-						</label>
-					</div>
+					<ButtonBurger 
+						isOpen={isOpen}
+						setIsOpen={setIsOpen}
+					/>
 
 					<div className="flex items-center">
 						<a href="/">
@@ -26,29 +49,54 @@ export  const Navbar  = () => {
 						</a>
 					</div>
 
-					<ul className="hidden items-center justify-end gap-3 whitespace-nowrap sm:flex">
-					
-						<li className="px-2 py-1 ">
-							<a href="#sobreMi" 		className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors" >Sobre mí</a>
-						</li>
-
-						<li className="px-2 py-1 ">
-							<a href="#experiencia" 	className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors">Experiencia</a>
-						</li>
-
-						<li className=" px-2 py-1 ">
-							<a href="#tecnologias" 	className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors">Tecnologías</a>
-						</li>
-
-						<li className="px-2 py-1 ">
-							<a href="#contacto" 	className="border-b-3 border-transparent hover:border-kanagawa-accent transition-colors">Contacto</a>
-						</li>
-					</ul>
+					<NavLinks />
 
 					<ButtonDarkMode/>
 				</nav>
+
 			</header>
+
+			{/* Overlay */}
+			{isOpen && (
+				<div className="fixed inset-0 bg-black/40 z-40 sm:hidden"></div>
+			)}
+
+			{/* Sidebar */}
+			<div
+				ref={sidebarRef}
+				className={`
+					bg-kanagawa-bg
+					text-kanagawa-text-secondary
+					fixed top-0 left-0 h-full w-64
+					shadow-lg
+					transform transition-transform duration-300
+					sm:hidden
+					z-50
+					${isOpen ? "translate-x-0" : "-translate-x-full"}
+				`}
+			>
+
+				{/* Botón cerrar */}
+				<div className="flex justify-end p-4">
+					<button 
+						onClick={() => setIsOpen(false)}
+						className="text-2xl"
+					>
+						✕
+					</button>
+				</div>
+
+				<div className="p-6">
+					<NavLinks 
+						direction="col"
+						onClick={() => setIsOpen(false)}
+					/>
+				</div>
+	
+
+			</div>
 		
+
 		</>
 	)
 }
