@@ -4,46 +4,41 @@ import { IoLogoGithub } from "react-icons/io";
 import CV from "../../assets/CV/Fernando_Espiritu_CV.docx"
 
 export const ButtonCv = () => {
-  return (
-    <div className="flex justify-center gap-3 w-[65%] mx-auto pb-5">
-      
-      {/* Botón de descarga de CV */}
-      <a 
-        className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
-                   bg-kanagawa-success inline-flex items-center h-9 
-                   hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
-        href={CV}
-  download="Fernando_Espiritu_CV.docx"
-      >
-        <AiOutlineCloudDownload className="text-xl" />
-        <span>CV</span>
-      </a>
+	return (
+		<div className="flex justify-center gap-3 w-[65%] mx-auto pb-5">
 
-      {/* Botón de GitHub */}
-      <a 
-        className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
-                   bg-kanagawa-success inline-flex items-center  h-9 
-                   hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
-        href="https://github.com/espiritu1"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <IoLogoGithub className="text-xl" />
-        <span>GitHub</span>
-      </a>
+			<a className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+						bg-kanagawa-success inline-flex items-center h-9 
+						hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
+				href={CV}
+				download="Fernando_Espiritu_CV.docx"
+				aria-label="Descargar CV"
+				title="Descargar CV">
+				<AiOutlineCloudDownload className="text-xl" />
+				<span>CV</span>
+			</a>
 
-      {/* Botón de LinkedIn */}
-      <a 
-        className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
-                   bg-kanagawa-success inline-flex items-center  h-9 
-                   hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
-        href="https://www.linkedin.com/in/fernando-espiritu-372539248/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <CiLinkedin className="text-xl" />
-        <span>LinkedIn</span>
-      </a>
+	
+			<a className="	mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+							bg-kanagawa-success inline-flex items-center h-9 
+							hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
+				href="https://github.com/espiritu1"
+				target="_blank"
+				rel="noopener noreferrer">
+				<IoLogoGithub className="text-xl" />
+				<span>GitHub</span>
+			</a>
+
+		
+			<a className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+			             bg-kanagawa-success inline-flex items-center  h-9 
+			             hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
+				href="https://www.linkedin.com/in/fernando-espiritu-372539248/"
+				target="_blank"
+				rel="noopener noreferrer">
+				<CiLinkedin className="text-xl" />
+				<span>LinkedIn</span>
+			</a>
 
     </div>
   );
