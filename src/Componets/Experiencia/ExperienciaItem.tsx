@@ -3,7 +3,7 @@ interface ExperienciaItemProps {
   empresa: string;
   fecha: string;
   tecnologias?: string;
-   descripcion: React.ReactNode;
+   descripcion?: React.ReactNode;
 }
 
 export const ExperienciaItem = ({ puesto, empresa, fecha, tecnologias, descripcion }: ExperienciaItemProps) => {

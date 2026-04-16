@@ -8,9 +8,12 @@ interface Props {
 export default function ButtonBurger({ isOpen, setIsOpen }: Props) {
 
 	return (
-		<button 
-			className=" ml-1 flex sm:hidden text-2xl items-center "
+	<button 
+			className="ml-1 flex sm:hidden text-2xl items-center"
 			onClick={() => setIsOpen(!isOpen)}
+			aria-label={isOpen ? "Cerrar menú" : "Abrir menú"}
+			aria-expanded={isOpen}
+			aria-controls="mobile-menu"
 		>
 			<GiHamburgerMenu />
 		</button>

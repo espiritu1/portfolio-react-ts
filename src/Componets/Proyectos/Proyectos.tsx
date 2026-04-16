@@ -1,6 +1,5 @@
 
 import { ProyectItem } from "./ProyectItem"; 
-import solaire from "../../assets/img/solaire.png"
 import p from "../../assets/img/verciones.jpg"
 
 
@@ -19,7 +18,7 @@ export const Proyectos = () => {
 			<div className="flex flex-wrap justify-center gap-6 border-amber-200">
 
 	<ProyectItem
-		nombre="video manager React"
+		nombre="Video manager React"
 		imagen={p}
 		descripcion="Panel de administración de videos que permite subir, organizar, buscar y gestionar contenido desde una interfaz moderna y responsive. Incluye vista previa, miniaturas y un diseño adaptable para dispositivos móviles y escritorio, facilitando la gestión de videos."
 		tecnologias={[

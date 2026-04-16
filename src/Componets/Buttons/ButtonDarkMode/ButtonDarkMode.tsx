@@ -1,7 +1,7 @@
 import React from "react";
 import { useTheme } from "../../Hooks/useTheme";
-import estusvacio from "../../../assets/img/estusvacio.png"
-import estuslleno from "../../../assets/img/estuslleno.png"
+/* import estusvacio from "../../../assets/img/estusvacio.png"
+import estuslleno from "../../../assets/img/estuslleno.png" */
 
 
 export const ButtonDarkMode: React.FC = () => {

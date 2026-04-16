@@ -32,7 +32,7 @@ export const Navbar = () => {
 
 	return(
 		<>
-			<header className="pt-4 pb-4 w-[85%]  mx-auto ">
+			<header className="pt-4 pb-4 w-[85%] max-w-6xl   mx-auto ">
 
 				<nav className=" p-1 flex justify-between rounded-full 
 								mx-auto backdrop-blur-sm transition-colors border border-t-0 border-b-0 
@@ -44,9 +44,12 @@ export const Navbar = () => {
 						
 					/>
 
+
+
 					<div className="flex items-center">
 						<a href="/">
-							<img src={solaire} alt="Logo" className="w-6 rounded-full " />
+							<img src={solaire} alt="Logo"  width="24"
+      height="24" className="w-6  h-6 rounded-full " />
 						</a>
 					</div>
 
