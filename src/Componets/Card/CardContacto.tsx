@@ -16,9 +16,9 @@ export const CardContacto = () => {
 	return (
 		<section id="contacto" className="my-15 mx-4">
 		
-			<div className="max-w-md mx-auto border border-kanagawa-border rounded-2xl p-6 bg-kanagawa-bg text-kanagawa-text-primary">
+			<div className="max-w-md mx-auto  rounded-2xl p-6 bg-kanagawa-bg text-kanagawa-text-primary">
 			
-				<h2 className="text-2xl text-kanagawa-text-primary text-center mb-6">			
+				<h2 className="text-2xl text-kanagawa-primary text-center mb-6">			
 					Contacto
 				</h2>
 			
@@ -47,7 +47,7 @@ export const CardContacto = () => {
 							href={`https://wa.me/52${telefono}`}
 							target="_blank"
 							rel="noopener noreferrer"
-							className=" text-md border border-kanagawa-border  py-1 px-2 rounded-md  bg-kanagawa-success hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300 inline-block
+							className=" text-md border  active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-border  py-1 px-2 rounded-md  bg-kanagawa-success hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300 inline-block
 							"> Abrir en navegador
 						</a>
 

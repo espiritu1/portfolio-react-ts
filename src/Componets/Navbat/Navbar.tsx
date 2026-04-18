@@ -1,8 +1,8 @@
 import { useState, useRef, useEffect } from "react"
 import { ButtonDarkMode } from "../Buttons/ButtonDarkMode"
-import solaire from "../../assets/img/solaire.png"
 import ButtonBurger from "./ButtonBurger"
 import { NavLinks } from "./NavbarLink"
+import { Avatar } from "../About/Avatar"
 
 
 export const Navbar = () => {
@@ -32,9 +32,9 @@ export const Navbar = () => {
 
 	return(
 		<>
-			<header className="pt-4 pb-4 w-[85%] max-w-6xl   mx-auto ">
+			<header className="pt-4 pb-4 w-[90%] max-w-6xl  mx-auto ">
 
-				<nav className=" p-1 flex justify-between rounded-full 
+				<nav className=" p-2 flex justify-between rounded-full 
 								mx-auto backdrop-blur-sm transition-colors border border-t-0 border-b-0 
 								border-kanagawa-bg-lighter dark:border-kanagawa-text-primary ">
 
@@ -43,14 +43,11 @@ export const Navbar = () => {
 						setIsOpen={setIsOpen} 
 						
 					/>
+				
 
-
-
+					
 					<div className="flex items-center">
-						<a href="/">
-							<img src={solaire} alt="Logo"  width="24"
-      height="24" className="w-6  h-6 rounded-full " />
-						</a>
+							<Avatar size="ico" />
 					</div>
 
 					<NavLinks />

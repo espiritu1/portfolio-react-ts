@@ -5,9 +5,9 @@ import CV from "../../assets/CV/Fernando_Espiritu_CV.docx"
 
 export const ButtonCv = () => {
 	return (
-		<div className="flex justify-center gap-3 w-[65%] mx-auto pb-5">
+		<div className="flex justify-center flex-wrap gap-3 w-[65%] mx-auto pb-5">
 
-			<a className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+			<a className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter  mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4
 						bg-kanagawa-success inline-flex items-center h-9 
 						hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
 				href={CV}
@@ -19,7 +19,7 @@ export const ButtonCv = () => {
 			</a>
 
 	
-			<a className="	mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+			<a className="active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter 	mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4
 							bg-kanagawa-success inline-flex items-center h-9 
 							hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
 				href="https://github.com/espiritu1"
@@ -30,7 +30,7 @@ export const ButtonCv = () => {
 			</a>
 
 		
-			<a className="mx-auto md:mx-0 border text-shadow-kanagawa-text-primary rounded-md px-4
+			<a className=" active:bg-kanagawa-highlight active:text-kanagawa-bg border-kanagawa-bg-lighter mx-auto md:mx-0 border text-kanagawa-text-primary rounded-md px-4
 			             bg-kanagawa-success inline-flex items-center  h-9 
 			             hover:bg-kanagawa-highlight hover:text-kanagawa-bg transition-colors duration-300"
 				href="https://www.linkedin.com/in/fernando-espiritu-372539248/"

@@ -24,7 +24,7 @@ export const ButtonDarkMode: React.FC = () => {
 				<input type="checkbox" checked={theme === "dark"} onChange={handleToggle} className="sr-only peer" />
 
 				
-				<div className={`relative hover:bg-kanagawa-warning w-10 h-4 border border-black/25 rounded-full 
+				<div className={`relative active:bg-kanagawa-warning active:transition-colors  active:duration-500 hover:bg-kanagawa-warning w-10 h-4 border border-black/25 rounded-full 
 					transition-colors  duration-500 ease-in-out ${theme === "dark" ? " bg-kanagawa-text-primary" : "bg-kanagawa-bg-lighter"}`}>
 					
 				<div

@@ -10,25 +10,23 @@ export const About = () => {
 
 				<header className="flex flex-col items-center text-center mb-11">
 					
-					<h1 className="text-7xl pb-7 font-bold 
-									bg-linear-to-r 
-									from-kanagawa-bg-lighter to-kanagawa-primary 
-									dark:from-kanagawa-primary dark:to-kanagawa-secondary 
-									bg-clip-text text-transparent">
+					
+					<h1 className="text-7xl pb-7 font-bold
+						bg-radial from-kanagawa-accent to-[#16574b]
+						bg-clip-text text-transparent">
 						Fernando Espíritu
 					</h1>
 
-					<div className="flex items-center  ">
+					<div className="flex items-center">
+						
 						<h2 className="text-3xl font-medium mr-2
-										bg-linear-to-r 
-										from-kanagawa-bg-dark to-kanagawa-secondary
-										dark:from-kanagawa-secondary dark:to-kanagawa-pink 
-										bg-clip-text text-transparent">
-							Desarrollador Frontend
+							bg-radial  from-[#a11b18] to-[#da2200]
+							bg-clip-text text-transparent">
+								Desarrollador Frontend
 						</h2>
 
 						<div className="md:hidden">
-							<Avatar size="sm"/>
+							<Avatar size="md" />
 						</div>
 					</div>
 

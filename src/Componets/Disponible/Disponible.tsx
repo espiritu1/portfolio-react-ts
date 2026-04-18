@@ -19,7 +19,7 @@ export const Disponible = () => {
 			icon={<AiOutlineMail className="text-xl" />}
 			text="fere.espiritu@gmail.com"
 			tooltip="Copiar correo"
-			  className="text-kanagawa-dark border   hover:text-kanagawa-bg  bg-kanagawa-success hover:bg-kanagawa-highlight  py-1 px-2 transition-colors duration-300  "
+			  className=" border   text-kanagawa-text-primary  hover:text-kanagawa-bg  bg-kanagawa-success hover:bg-kanagawa-highlight border-kanagawa-bg-lighter  py-1 px-2 transition-colors duration-300  "
 			
 			/>
 

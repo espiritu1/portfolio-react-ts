@@ -9,14 +9,16 @@ export const NavLinks = ({ direction = "row", onClick }: Props) => {
 
 	const baseStyles = "px-2 py-1"
 
-	const linkStyles = "border-b-3 dark:hover:drop-shadow-[0_0_5px_#ffffff]  hover:drop-shadow-[0_0_2px_#16161D] border-transparent transition-all duration-300 ease-in-out   "
+
+
+	const linkStyles = "text-lg border-b-3 dark:hover:drop-shadow-[0_0_5px_#77bf21] hover:drop-shadow-[0_0_2px_#77bf21] active:drop-shadow-[0_0_2px_#77bf21] border-transparent transition-all active:duration-300 duration-300 ease-in-out   "
 
 return (
 	<>
 	<ul className={`
 		${direction === "row"  ? 
 						"hidden sm:flex items-center justify-end   whitespace-nowrap" : 
-						"flex flex-col gap-3 divide-y divide-kanagawa-bg-lighter dark:divide-kanagawa-text-primary"}
+						"flex flex-col  divide-y divide-kanagawa-bg-lighter dark:divide-kanagawa-text-primary"}
 	`}>
 
 		<li className={`${baseStyles} `}>

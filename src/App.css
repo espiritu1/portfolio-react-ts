@@ -21,10 +21,10 @@
 
   --color-kanagawa-primary: #7E9CD8;
   --color-kanagawa-secondary: #957FB8;
-  --color-kanagawa-accent: #98BB6C;
+  --color-kanagawa-accent: #77bf21;
   --color-kanagawa-highlight: #E6C384;
 
-  --color-kanagawa-success: #76946A;
+  --color-kanagawa-success: #255636;
   --color-kanagawa-warning: #FF9E3B;
   --color-kanagawa-error: #E82424;
   --color-kanagawa-info: #6A9589;
@@ -32,4 +32,5 @@
   --color-kanagawa-pink: #D27E99;
   --color-kanagawa-orange: #FFA066;
 }
+
 
