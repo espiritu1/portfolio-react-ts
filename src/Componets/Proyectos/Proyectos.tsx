@@ -1,6 +1,7 @@
 
 import { ProyectItem } from "./ProyectItem"; 
 import p from "../../assets/img/verciones.jpg"
+import openAPI from "../../assets/img/openAPI.png"
 
 
 export const Proyectos = () => {
@@ -28,6 +29,22 @@ export const Proyectos = () => {
 		]}
 		github="https://github.com/espiritu1/video-manager-react"
 	/> 
+
+
+<ProyectItem
+	nombre="Video Manager API"
+	imagen={openAPI}
+	descripcion="API REST para gestión de videos y categorías desarrollada con Express y PostgreSQL. validación de datos con Zod, documentación interactiva con OpenAPI/Swagger y manejo de base de datos con Prisma ORM."
+	tecnologias={[
+		"Express",
+		"Node.js",
+		"PostgreSQL",
+		"Prisma",
+		"Zod",
+		"OpenAPI"
+	]}
+	github="https://github.com/espiritu1/backend-video-manager-react-ts.git"
+/>
 	
 </div>
 

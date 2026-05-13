@@ -8,7 +8,7 @@ import { Avatar } from "../About/Avatar"
 export const Navbar = () => {
 
 	const [isOpen, setIsOpen] = useState(false)
-	const sidebarRef = useRef<HTMLDivElement>(null)
+	const sidebarRef = useRef<HTMLDivElement>(null) 
 	// cerrar al hacer click fuera
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
@@ -28,43 +28,34 @@ export const Navbar = () => {
 		}
 	}, [isOpen])
 
-	
 
 	return(
 		<>
 			<header className="pt-4 pb-4 w-[90%] max-w-6xl  mx-auto ">
-
 				<nav className=" p-2 flex justify-between rounded-full 
 								mx-auto backdrop-blur-sm transition-colors border border-t-0 border-b-0 
 								border-kanagawa-bg-lighter dark:border-kanagawa-text-primary ">
 
 					<ButtonBurger 
 						isOpen={isOpen}
-						setIsOpen={setIsOpen} 
-						
-					/>
+						setIsOpen={setIsOpen} 		/>
 				
-
-					
 					<div className="flex items-center">
 							<Avatar size="ico" />
 					</div>
 
 					<NavLinks />
-
 					<ButtonDarkMode/>
-					
 					
 				</nav>
 
 			</header>
-
-			{/* Overlay */}
+			
 			{isOpen && (
 				<div className="fixed inset-0 bg-black/40 z-40 sm:hidden"></div>
 			)}
 
-			{/* Sidebar */}
+			
 			<div
 				ref={sidebarRef}
 				className={`
@@ -95,12 +86,7 @@ export const Navbar = () => {
 						onClick={() => setIsOpen(false)}
 					/>
 				</div>
-	
-
 			</div>
-			
-		
-
 		</>
 	)
 }
